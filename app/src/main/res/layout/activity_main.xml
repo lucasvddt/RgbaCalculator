@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             xmlns:app="http://schemas.android.com/apk/res-auto"
+                                             xmlns:tools="http://schemas.android.com/tools"
+                                             android:layout_width="match_parent"
+                                             android:layout_height="match_parent"
+                                             tools:context="br.unifor.ads.argbcalculator.MainActivity">
+
+    <View
+            android:id="@+id/main_color_view"
+            android:layout_width="0dp"
+            android:layout_height="200dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="16dp"
+            android:background="@android:color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    <SeekBar
+            android:id="@+id/main_seekbar_alpha"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:progressBackgroundTint="@android:color/black"
+            android:progressTint="@android:color/black"
+            app:layout_constraintBottom_toBottomOf="@+id/main_edittext_alpha"
+            app:layout_constraintEnd_toStartOf="@+id/main_edittext_alpha"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/main_edittext_alpha"
+            app:layout_constraintVertical_bias="1.0" />
+
+    <EditText
+            android:id="@+id/main_edittext_alpha"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="32dp"
+            android:ems="10"
+            android:inputType="number"
+            android:labelFor="@+id/main_seekbar_alpha"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/main_color_view" />
+
+    <SeekBar
+            android:id="@+id/main_seekbar_red"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:progressBackgroundTint="@android:color/holo_red_light"
+            android:progressTint="@android:color/holo_red_light"
+            app:layout_constraintBottom_toBottomOf="@+id/main_edittext_red"
+            app:layout_constraintEnd_toStartOf="@+id/main_edittext_red"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/main_edittext_red"
+            app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+            android:id="@+id/main_edittext_red"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="4dp"
+            android:ems="10"
+            android:inputType="number"
+            android:labelFor="@+id/main_seekbar_red"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/main_edittext_alpha" />
+
+    <SeekBar
+            android:id="@+id/main_seekbar_green"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:progressBackgroundTint="@android:color/holo_green_light"
+            android:progressTint="@android:color/holo_green_light"
+            app:layout_constraintBottom_toBottomOf="@+id/main_edittext_green"
+            app:layout_constraintEnd_toStartOf="@+id/main_edittext_green"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/main_edittext_green"
+            app:layout_constraintVertical_bias="1.0" />
+
+    <EditText
+            android:id="@+id/main_edittext_green"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="4dp"
+            android:ems="10"
+            android:inputType="number"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/main_edittext_red" />
+
+    <SeekBar
+            android:id="@+id/main_seekbar_blue"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:progressBackgroundTint="@android:color/holo_blue_bright"
+            android:progressTint="@android:color/holo_blue_bright"
+            app:layout_constraintBottom_toBottomOf="@+id/main_edittext_blue"
+            app:layout_constraintEnd_toStartOf="@+id/main_edittext_blue"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/main_edittext_blue"
+            app:layout_constraintVertical_bias="1.0" />
+
+    <EditText
+            android:id="@+id/main_edittext_blue"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="12dp"
+            android:ems="10"
+            android:inputType="number"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/main_edittext_green" />
+
+    <TextView
+            android:id="@+id/textViewValue"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.501"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/main_seekbar_blue"
+            app:layout_constraintVertical_bias="0.714" />
+
+    <RadioButton
+            android:id="@+id/radioButtonHex"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="HEX"
+            app:layout_constraintBottom_toTopOf="@+id/main_seekbar_alpha"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/main_color_view"
+            app:layout_constraintVertical_bias="1.0" />
+
+    <RadioButton
+            android:id="@+id/radioButtonARGB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:text="DEC"
+            app:layout_constraintBottom_toTopOf="@+id/main_seekbar_alpha"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.411"
+            app:layout_constraintStart_toEndOf="@+id/radioButtonHex"
+            app:layout_constraintTop_toBottomOf="@+id/main_color_view"
+            app:layout_constraintVertical_bias="1.0" />
+
+</android.support.constraint.ConstraintLayout>
